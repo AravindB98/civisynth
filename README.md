@@ -142,3 +142,19 @@ Good first contributions: new RSS source presets, benchmark cases in `data/evals
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+---
+
+## 🧒 Explain Like I'm 5
+
+A truth-checking machine for politics: it tracks the stories politicians and media push, fact-checks claims against real documents (and grades its own accuracy), and follows what laws are actually being written — so citizens can see evidence instead of spin.
+
+## 🧰 Tech Stack
+
+Python · narrative tracking · RAG fact-checking with evals · legislative data pipelines · election intelligence
+
+## 🌍 Real-Life Applications
+
+- Journalists fact-checking political claims with document-backed citations
+- Civic groups tracking bills and voting records
+- Researchers studying how political narratives spread
