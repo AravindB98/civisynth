@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>civisynth — Open political intelligence</title>
+<meta name="description" content="Open political intelligence — narrative tracking, evidence-backed fact-checking, and legislative intelligence for citizens.">
+<style>
+:root{--accent:#7c5cff;--bg:#0d1117;--card:#161b22;--border:#30363d;--text:#e6edf3;--muted:#8b949e}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.65}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 48px;text-align:center;background:radial-gradient(ellipse at top,color-mix(in srgb,var(--accent) 18%,transparent),transparent 65%)}
+h1{font-size:2.6rem;margin-bottom:8px}
+.emoji{font-size:3.2rem;display:block;margin-bottom:12px}
+.tagline{color:var(--muted);font-size:1.15rem;max-width:640px;margin:0 auto 24px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-ghost{border:1px solid var(--border);color:var(--text)}
+section{padding:40px 0;border-top:1px solid var(--border)}
+h2{font-size:1.5rem;margin-bottom:16px;color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.chip{display:inline-block;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:5px 14px;margin:4px;font-size:.88rem}
+ul.apps{list-style:none}ul.apps li{padding:8px 0 8px 28px;position:relative}
+ul.apps li:before{content:"✦";position:absolute;left:4px;color:var(--accent)}
+#demo{margin-top:8px}
+.demo-hint{color:var(--muted);font-size:.9rem;margin-bottom:14px}
+button.demo-btn{background:var(--accent);color:#fff;border:none;border-radius:8px;padding:9px 18px;font-weight:600;cursor:pointer;font-size:.92rem;margin:4px 6px 4px 0}
+button.demo-btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
+input[type=range]{accent-color:var(--accent)}
+canvas{background:#0a0e14;border:1px solid var(--border);border-radius:8px;max-width:100%}
+.mono{font-family:ui-monospace,Menlo,monospace;font-size:.85rem}
+footer{padding:36px 0;text-align:center;color:var(--muted);font-size:.9rem}
+footer a{color:var(--accent);text-decoration:none}
+.star-cta{background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 25%,var(--card)),var(--card));border:1px solid var(--accent);border-radius:12px;padding:24px;text-align:center;margin-top:8px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<span class="emoji">🏛️</span>
+<h1>civisynth</h1>
+<p class="tagline">Open political intelligence — narrative tracking, evidence-backed fact-checking, and legislative intelligence for citizens.</p>
+<div class="btns">
+<a class="btn btn-primary" href="https://github.com/AravindB98/civisynth">View on GitHub</a>
+<a class="btn btn-ghost" href="#demo-sec">▶ Try the Demo</a>
+</div>
+</div></header>
+<div class="wrap">
+<section><h2>🧒 What is this? (Plain English)</h2><div class="card"><p>A truth-checking machine for politics: it tracks the stories politicians and media push, fact-checks claims against real documents (and grades its own accuracy), and follows what laws are actually being written — so citizens can see evidence instead of spin.</p></div></section>
+<section><h2>✨ Key Features</h2><div class="grid"><div class="card"><strong>Narrative tracking</strong><p style="color:var(--muted);margin-top:6px">Follow how political stories spread and mutate across media.</p></div><div class="card"><strong>RAG fact-checking</strong><p style="color:var(--muted);margin-top:6px">Claims are checked against real documents, with accuracy evals.</p></div><div class="card"><strong>Legislative intelligence</strong><p style="color:var(--muted);margin-top:6px">Track bills, votes, and who's behind them.</p></div><div class="card"><strong>Election analytics</strong><p style="color:var(--muted);margin-top:6px">Data-driven views of races and public sentiment.</p></div></div></section>
+<section id="demo-sec"><h2>🕹️ Interactive Demo</h2>
+<p class="demo-hint">Pick a claim and watch CiviSynth retrieve evidence and deliver a cited verdict. <em>(Illustrative in-browser simulation of what the real system does.)</em></p>
+<div class="card" id="demo"><div id="claims"></div><div id="fc-out" style="margin-top:14px"></div></div></section>
+<section><h2>🧰 Tech Stack</h2><div><span class="chip">Python</span><span class="chip">narrative tracking</span><span class="chip">RAG fact-checking with evals</span><span class="chip">legislative data pipelines</span><span class="chip">election intelligence</span></div></section>
+<section><h2>🌍 Real-Life Applications</h2><ul class="apps"><li>Journalists fact-checking political claims with document-backed citations</li><li>Civic groups tracking bills and voting records</li><li>Researchers studying how political narratives spread</li></ul></section>
+<section><h2>⭐ Support the Project</h2><div class="star-cta">
+<p style="margin-bottom:14px">If this project is useful or interesting to you, <strong>starring ⭐ and forking 🍴 the repo</strong> is the best way to support it and help others find it.</p>
+<div class="btns">
+<a class="btn btn-primary" href="https://github.com/AravindB98/civisynth/stargazers">⭐ Star</a>
+<a class="btn btn-ghost" href="https://github.com/AravindB98/civisynth/fork">🍴 Fork</a>
+<a class="btn btn-ghost" href="https://github.com/AravindB98/civisynth/issues">💬 Contribute</a>
+</div></div></section>
+</div>
+<footer>Built by <a href="https://github.com/AravindB98">Aravind Balaji</a> · <a href="https://aravindbalaji.com">aravindbalaji.com</a> · <a href="https://medium.com/@aravindbalaji25">Medium</a></footer>
+<script>
+
+const CLAIMS=[
+ {c:"\"The new infrastructure bill allocates $50B to rural broadband.\"",v:"MOSTLY TRUE",col:"#3fb950",ev:["Bill text §402: $42.5B for broadband deployment (congress.gov)","CBO estimate adds $8B in related grants — combined figure ≈ $50B"]},
+ {c:"\"Unemployment is at its highest level in a decade.\"",v:"FALSE",col:"#f85149",ev:["BLS data: current rate 4.1% vs 2020 peak of 14.8%","Decade high occurred April 2020, not now (bls.gov)"]},
+ {c:"\"Senator X voted against the veterans healthcare act.\"",v:"MISLEADING",col:"#d29922",ev:["Roll call #214: voted NO on procedural motion, YES on final passage","Final vote record: senate.gov roll call #221"]}];
+const box=document.getElementById('claims'),out=document.getElementById('fc-out');
+CLAIMS.forEach((cl,i)=>{const b=document.createElement('button');b.className='demo-btn ghost';b.style.display='block';b.style.width='100%';b.style.textAlign='left';b.style.margin='6px 0';b.textContent=cl.c;b.onclick=()=>check(cl);box.appendChild(b);});
+function check(cl){out.innerHTML='<p class="mono" style="color:var(--muted)">⏳ Retrieving evidence from document corpus…</p>';
+ setTimeout(()=>{out.innerHTML='<div style="border:1px solid '+cl.col+';border-radius:8px;padding:16px"><strong style="color:'+cl.col+'">'+cl.v+'</strong><ul style="margin:10px 0 0 18px;color:var(--muted)">'+cl.ev.map(e=>'<li>📄 '+e+'</li>').join('')+'</ul></div>';},900);}
+
+</script>
+</body>
+</html>
